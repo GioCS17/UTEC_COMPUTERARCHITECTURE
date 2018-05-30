@@ -1,0 +1,21 @@
+     Assembly listing for: INOUT.mas
+                Assembled: Wed May 30 10:42:52 COT 2018
+
+         |                          / INPUT OUTPUT
+         |         ORG 100           
+100 5000 |         INPUT             
+101 2104 |         STORE X           
+102 6000 |         OUTPUT            
+103 7000 |         HALT              
+104 0000 |  X      DEC 0             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          X      |   104   | 101
+         --------------------------------------------------
+
+

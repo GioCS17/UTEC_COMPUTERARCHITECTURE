@@ -1,0 +1,31 @@
+     Assembly listing for: EXERCISE3.mas
+                Assembled: Wed May 30 12:00:04 COT 2018
+
+         |                           / WHILE
+000 1009 |         LOAD X            
+001 400A |         SUBT AUX          
+002 8000 |  Ins1   SKIPCOND 000      
+003 9006 |         JUMP Ins2         
+004 300B |         ADD AUX2          
+005 9002 |         JUMP Ins1         
+006 300A |  Ins2   ADD AUX           
+007 2009 |         STORE X           
+008 7000 |         HALT              
+009 0001 |  X      DEC 1             
+00A 000A |  AUX    DEC 10            
+00B 0001 |  AUX2   DEC 1             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          AUX    |   00A   | 001, 006
+          AUX2   |   00B   | 004
+          Ins1   |   002   | 005
+          Ins2   |   006   | 003
+          X      |   009   | 000, 007
+         --------------------------------------------------
+
+

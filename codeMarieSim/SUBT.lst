@@ -1,0 +1,23 @@
+     Assembly listing for: SUBT.mas
+                Assembled: Wed May 30 10:38:48 COT 2018
+
+         |                          / Subt two values
+         |         ORG 100           
+100 1104 |         LOAD X            
+101 4105 |         SUBT Y            
+102 2104 |         STORE X           
+103 7000 |         HALT              
+104 000A |  X      DEC 10            
+105 0005 |  Y      DEC 5             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          X      |   104   | 100, 102
+          Y      |   105   | 101
+         --------------------------------------------------
+
+

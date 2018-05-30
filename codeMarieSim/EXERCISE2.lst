@@ -1,0 +1,35 @@
+     Assembly listing for: EXERCISE2.mas
+                Assembled: Wed May 30 11:47:48 COT 2018
+
+         |                          / iF WITH INPUT
+         |         ORG 100           
+100 5000 |         INPUT             
+101 210D |         STORE X           
+102 410F |         SUBT AUX          
+103 8800 |         SKIPCOND 800      
+104 9108 |         JUMP Gt0          
+105 310F |         ADD AUX           
+106 310D |         ADD X             
+107 210E |         STORE Y           
+108 A000 |  Gt0    CLEAR             
+109 110E |         LOAD Y            
+10A 310F |         ADD AUX           
+10B 210E |         STORE Y           
+10C 7000 |         HALT              
+10D 0000 |  X      DEC 0             
+10E 0000 |  Y      DEC 0             
+10F 0001 |  AUX    DEC 1             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          AUX    |   10F   | 102, 105, 10A
+          Gt0    |   108   | 104
+          X      |   10D   | 101, 106
+          Y      |   10E   | 107, 109, 10B
+         --------------------------------------------------
+
+
