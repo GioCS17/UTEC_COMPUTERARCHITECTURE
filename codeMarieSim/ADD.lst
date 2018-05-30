@@ -1,0 +1,23 @@
+     Assembly listing for: ADD.mas
+                Assembled: Wed May 30 10:19:20 COT 2018
+
+         |                          / Adding two elements
+         |         ORG 100          /ORIGIN OF PC
+100 1104 |         LOAD X            
+101 3105 |         ADD Y             
+102 2104 |         STORE X           
+103 7000 |         HALT              
+104 000A |  X      DEC 10            
+105 000A |  Y      DEC 10            
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          X      |   104   | 100, 102
+          Y      |   105   | 101
+         --------------------------------------------------
+
+
